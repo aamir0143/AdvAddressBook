@@ -51,3 +51,6 @@ Select * From AddressBook Order By FirstName;
 -----------------------------Ability To Get Number Of Contact Persons i.e. Count By Type And Name(UC10)-----------------------------
 Select Count(*) As CountABType,AddressBookType From AddressBook Group By AddressBookType;
 Select Count(*) As CountABNames,AddressBookName  From AddressBook Group By AddressBookName;	
+-----------------------------Adding Same Person In Different AddressBookType(UC11)-----------------------------
+Insert into AddressBook values ('Wasim', 'Anwar', 'Modhipur', 'Purnea', 'Bihar', 854330, 9199523544, 'abc456@gmail.com','FamilyAddressBook','Family');
+Select * From AddressBook Order By FirstName;
