@@ -47,4 +47,7 @@ Insert Into AddressBook(FirstName,LastName,Address,City,StateName,ZipCode,PhoneN
 Update AddressBook Set AddressBookName='FreindsAddressBook',AddressBookType='Freinds' Where FirstName ='Ashraf' Or FirstName='Wasim' Or FirstName = 'Mahesh';
 Update AddressBook Set AddressBookName='FamilyAddressBook',AddressBookType='Family' Where FirstName ='Aamir' Or FirstName='Aftab' Or FirstName = 'Afroz';
 Update AddressBook Set AddressBookName='ProfesionAddressBook',AddressBookType='Profession' Where FirstName ='Arjun' Or FirstName='Bhrat' Or FirstName = 'Rakesh';
-Select * From AddressBook Order By FirstName;	
+Select * From AddressBook Order By FirstName;
+-----------------------------Ability To Get Number Of Contact Persons i.e. Count By Type And Name(UC10)-----------------------------
+Select Count(*) As CountABType,AddressBookType From AddressBook Group By AddressBookType;
+Select Count(*) As CountABNames,AddressBookName  From AddressBook Group By AddressBookName;	
