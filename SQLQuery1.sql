@@ -32,3 +32,5 @@ Select * From AddressBook;
 Select * From AddressBook Where City='Purnea' Or StateName='Bihar';
 ----------------------Ability To Get The Size Of AddressBook By City And State Using Count(UC7)---------------------------------
 Select Count(*) As Count,StateName,City From AddressBook Group By StateName,City;
+--------------------------------------Retrive Sorted Persons Records By City(UC8)------------------------------------------------
+Select * From AddressBook Where City = 'Purnea' Order By FirstName;
