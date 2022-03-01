@@ -19,3 +19,9 @@ Insert Into AddressBook Values('Aamir', 'Reza', 'Dubaili', 'Purnea', 'Bihar', 85
 						('Rakesh', 'Kumar', 'Kasba', 'Purnea', 'Bihar', 854330, 9852364170, 'abc852@gmail.com'),	
 						('Anwar', 'Alam', 'Purnea', 'Purnea', 'Bihar', 854330, 9852741630, 'abc741@gmail.com');
 Select * From AddressBook;
+---------------------------------------Edit Existing AddressBook Table Using Update(UC4)-----------------------------------------------
+Update AddressBook Set EmailId='mansi@yahoo.com' Where FirstName='Wasim';
+Update AddressBook Set Address='Gandhinagar', City = 'Patna', StateName = 'Bihar' Where FirstName='Aamir';
+Update AddressBook Set Phonenum=7415986320 Where FirstName='Rakesh';
+Update AddressBook Set LastName='Kumar' Where FirstName='Arjun';
+Select * From AddressBook;
